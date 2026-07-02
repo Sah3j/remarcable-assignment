@@ -29,44 +29,44 @@ one or more tags, and combine all three at once.
 These instructions assume Python 3.13 is installed.
 
 1. **Clone the repository**
-```bash
+   ```bash
    git clone https://github.com/Sah3j/remarcable-assignment
    cd remarcable-assignment
-```
+   ```
 
 2. **Create and activate a virtual environment**
-```bash
+   ```bash
    python3 -m venv venv
    source venv/bin/activate        # macOS / Linux
    # venv\Scripts\activate         # Windows
-```
+   ```
 
 3. **Install dependencies**
-```bash
+   ```bash
    pip install -r requirements.txt
-```
+   ```
 
 4. **Apply database migrations**
-```bash
+   ```bash
    python manage.py migrate
-```
+   ```
 
 5. **Seed the database with sample data**
-```bash
+   ```bash
    python manage.py seed_products
-```
+   ```
    This creates 5 categories, 10 tags, and 22 products.
 
 6. **(Optional) Create an admin superuser** — needed only to access the
    Django admin interface at `/admin/`:
-```bash
+   ```bash
    python manage.py createsuperuser
-```
+   ```
 
 7. **Run the development server**
-```bash
+   ```bash
    python manage.py runserver
-```
+   ```
    Then open **http://127.0.0.1:8000/** for the product catalog,
    or **http://127.0.0.1:8000/admin/** for the admin interface.
 
